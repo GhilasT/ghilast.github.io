@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghilas TIDJET - Portfolio Développeur Data Science & Machine Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Curtain Overlay -->
+    <div class="curtain-overlay">
+        <div class="curtain-content">
+            <div class="loader">
+                <h1 class="loader-title">
+                    <span>G</span><span>h</span><span>i</span><span>l</span><span>a</span><span>s</span><span> </span><span>T</span><span>I</span><span>D</span><span>J</span><span>E</span><span>T</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div class="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Ghilas TIDJET</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Ghilas TIDJET</h1>
+            <h2 class="hero-subtitle-main">Développeur Data Science & Machine Learning</h2>
+            <p class="hero-subtitle">Spécialisé en analyse de données, machine learning et développement d'applications intelligentes</p>
+            <a href="#about" class="cta-button">
+                <span>Découvrir mon profil</span>
+                <div class="button-ripple"></div>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Passionné par la Data Science et le Machine Learning</h3>
+                    <p>
+                        Je suis <strong>Ghilas TIDJET</strong>, développeur spécialisé en Data Science et Machine Learning. 
+                        Passionné par les technologies émergentes, je conçois et développe des solutions innovantes 
+                        qui transforment les données en insights exploitables.
+                    </p>
+                    <p>
+                        Mon expertise couvre l'ensemble du pipeline de données : de la collecte et du preprocessing 
+                        jusqu'au déploiement de modèles de machine learning en production. J'ai une solide expérience 
+                        dans le développement d'applications complètes, allant des interfaces utilisateur intuitives 
+                        aux systèmes backend robustes.
+                    </p>
+                    <p>
+                        Toujours à la recherche de nouveaux défis, j'aime explorer les dernières avancées en machine learning, 
+                        computer vision, et algorithmes d'optimisation pour créer des solutions qui ont un impact réel.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎯</div>
+                        <h4>Expertise Technique</h4>
+                        <p>Maîtrise approfondie de Python, Machine Learning, et développement d'applications</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🚀</div>
+                        <h4>Innovation</h4>
+                        <p>Développement de solutions créatives alliant IA, optimisation et interface utilisateur</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🔬</div>
+                        <h4>Recherche & Analyse</h4>
+                        <p>Analyse approfondie des données et implémentation d'algorithmes avancés</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            
+            <div class="project-category">
+                <h3 class="category-title">Data Science & Analyse</h3>
+                <div class="project-grid">
+                    <div class="project-card" data-project="csv-analyzer">
+                        <div class="card-icon">📊</div>
+                        <h4>Analyseur de CSV et Visualisation</h4>
+                        <p>Application web interactive pour l'analyse de données CSV avec génération automatique de visualisations</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>Pandas</span>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="real-estate">
+                        <div class="card-icon">🏠</div>
+                        <h4>Prédiction de Prix Immobilier</h4>
+                        <p>Modèle de prédiction des prix immobiliers en Île-de-France basé sur plusieurs critères</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="churn-prediction">
+                        <div class="card-icon">📱</div>
+                        <h4>Churn Prediction</h4>
+                        <p>Détection de clients à risque de résiliation dans le secteur télécom</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>scikit-learn</span>
+                            <span>Classification</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3 class="category-title">Machine Learning & Jeux</h3>
+                <div class="project-grid">
+                    <div class="project-card" data-project="image-recognition">
+                        <div class="card-icon">🤖</div>
+                        <h4>Reconnaissance d'Image</h4>
+                        <p>Détection et classification d'escaliers avec estimation des matériaux</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="quoridor">
+                        <div class="card-icon">🎮</div>
+                        <h4>Quoridor Game with AI</h4>
+                        <p>Jeu de société intelligent avec IA Minimax et interface interactive</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>Minimax</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="labyrinth">
+                        <div class="card-icon">🧩</div>
+                        <h4>Labyrinth Solver</h4>
+                        <p>Résolution de labyrinthe avec comparaison d'algorithmes de pathfinding</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>A*</span>
+                            <span>Dijkstra</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category">
+                <h3 class="category-title">Systèmes & Optimisation</h3>
+                <div class="project-grid">
+                    <div class="project-card" data-project="resource-optimization">
+                        <div class="card-icon">⚡</div>
+                        <h4>Assignation de Ressources</h4>
+                        <p>Algorithme d'optimisation sous contraintes pour l'affectation de ressources</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Optimisation</span>
+                            <span>Algorithmes</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="mini-sgbd">
+                        <div class="card-icon">🗄️</div>
+                        <h4>Mini-SGBD Relationnel</h4>
+                        <p>Système de gestion de base de données avec requêtes SQL basiques</p>
+                        <div class="tech-stack">
+                            <span>C</span>
+                            <span>SQL</span>
+                            <span>Base de données</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-more">Voir plus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Langages de Programmation</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java (Spring Boot, JavaFX)</li>
+                        <li>SQL (MySQL, PostgreSQL)</li>
+                        <li>JavaScript</li>
+                        <li>C/C++</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & Machine Learning</h3>
+                    <ul>
+                        <li>Pandas, NumPy, Matplotlib, Seaborn</li>
+                        <li>scikit-learn, TensorFlow</li>
+                        <li>Streamlit, Jupyter Notebook</li>
+                        <li>Statistiques & Analyse prédictive</li>
+                        <li>Computer Vision (OpenCV)</li>
+                        <li>Feature Engineering & Preprocessing</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Développement & Frameworks</h3>
+                    <ul>
+                        <li>Spring Boot, REST API</li>
+                        <li>React.js, Node.js</li>
+                        <li>Git/GitHub, CI/CD</li>
+                        <li>Docker, Linux</li>
+                        <li>Bases de données relationnelles</li>
+                        <li>Architecture MVC</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Outils & Méthodologies</h3>
+                    <ul>
+                        <li>Agile/Scrum</li>
+                        <li>Power BI, Tableau</li>
+                        <li>Excel avancé (VBA, Macros)</li>
+                        <li>AWS/Azure (bases)</li>
+                        <li>Tests unitaires (JUnit, pytest)</li>
+                        <li>Documentation technique</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Intéressé par mes projets ou souhaitez collaborer ? N'hésitez pas à me contacter !</p>
+            <div class="contact-info">
+                <a href="mailto:ghilastidjet.pro@gmail.com" class="contact-button">
+                    <span class="contact-icon">✉️</span>
+                    ghilastidjet.pro@gmail.com
+                </a>
+                <a href="tel:+33745299076" class="contact-button">
+                    <span class="contact-icon">📱</span>
+                    +33 7 45 29 90 76
+                </a>
+                <a href="https://www.linkedin.com/in/ghilastidjet/" target="_blank" class="contact-button">
+                    <span class="contact-icon">💼</span>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/ghilasT" target="_blank" class="contact-button">
+                    <span class="contact-icon">🔗</span>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ghilas TIDJET - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
