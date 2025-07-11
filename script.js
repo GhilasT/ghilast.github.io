@@ -359,102 +359,6 @@ function showProjectDetails(projectId) {
             ],
             technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap', 'jQuery']
         },
-        'csv-analyzer': {
-            title: 'Analyseur de CSV et Visualisation de Données',
-            description: 'Application web interactive développée avec Streamlit permettant de téléverser des fichiers CSV et de générer automatiquement des visualisations (histogrammes, nuages de points, heatmaps) pour explorer et analyser les données.',
-            features: [
-                'Upload de fichiers CSV',
-                'Génération automatique de visualisations',
-                'Interface interactive avec Streamlit',
-                'Analyse statistique des données',
-                'Export des graphiques'
-            ],
-            technologies: ['Python', 'Streamlit', 'Pandas', 'Matplotlib', 'Seaborn']
-        },
-        'real-estate': {
-            title: 'Prédiction de Prix Immobilier',
-            description: 'Modélisation d\'un système de prédiction des prix immobiliers en Île-de-France basé sur plusieurs critères comme la surface, la localisation, et d\'autres caractéristiques du bien.',
-            features: [
-                'Analyse de données immobilières',
-                'Feature engineering avancé',
-                'Modèles de régression optimisés',
-                'Validation croisée',
-                'Interface de prédiction'
-            ],
-            technologies: ['Python', 'scikit-learn', 'Pandas', 'NumPy', 'Machine Learning']
-        },
-        'churn-prediction': {
-            title: 'Churn Prediction - Détection de Clients à Risque',
-            description: 'Développement d\'un modèle de classification pour prédire le churn client sur un jeu de données télécom, permettant d\'identifier les clients susceptibles de résilier.',
-            features: [
-                'Preprocessing des données télécom',
-                'Modèles de classification',
-                'Évaluation des performances',
-                'Analyse des features importantes',
-                'Stratégies de rétention'
-            ],
-            technologies: ['Python', 'scikit-learn', 'Classification', 'Data Analysis']
-        },
-        'image-recognition': {
-            title: 'Reconnaissance d\'Image - Détection d\'Escaliers',
-            description: 'Conception d\'un programme de reconnaissance d\'escaliers (droit ou tournant) et estimation des matériaux en utilisant des techniques de computer vision et machine learning.',
-            features: [
-                'Détection automatique d\'escaliers',
-                'Classification droits vs tournants',
-                'Estimation des matériaux',
-                'Traitement d\'images en temps réel',
-                'Interface utilisateur intuitive'
-            ],
-            technologies: ['Python', 'OpenCV', 'NumPy', 'Computer Vision', 'Machine Learning']
-        },
-        'quoridor': {
-            title: 'Quoridor Game with AI',
-            description: 'Implémentation de plusieurs algorithmes d\'IA avec Minimax et élagage alpha-bêta, simulations IA vs IA, et interface utilisateur interactive pour le jeu de société Quoridor.',
-            features: [
-                'Algorithmes d\'IA avec Minimax',
-                'Élagage Alpha-Bêta pour optimisation',
-                'Interface graphique avec Pygame',
-                'Simulations IA vs IA',
-                'Différents niveaux de difficulté'
-            ],
-            technologies: ['Python', 'Pygame', 'Minimax', 'Alpha-Beta', 'Algorithmes d\'IA']
-        },
-        'labyrinth': {
-            title: 'Labyrinth Solver - Résolution de Labyrinthe',
-            description: 'Implémentation et comparaison d\'algorithmes A*, Dijkstra et BFS avec gestion dynamique d\'obstacles et propagation de feu.',
-            features: [
-                'Algorithmes A*, Dijkstra, BFS',
-                'Gestion dynamique d\'obstacles',
-                'Propagation de feu',
-                'Visualisation des chemins',
-                'Comparaison des performances'
-            ],
-            technologies: ['Python', 'A*', 'Dijkstra', 'BFS', 'Pathfinding']
-        },
-        'resource-optimization': {
-            title: 'Assignation de Ressources Optimisée',
-            description: 'Développement d\'un algorithme d\'affectation de ressources optimisé en fonction de contraintes et priorités multiples.',
-            features: [
-                'Optimisation sous contraintes',
-                'Gestion des priorités',
-                'Algorithmes génétiques',
-                'Résolution de problèmes complexes',
-                'Interface de configuration'
-            ],
-            technologies: ['Python', 'Algorithmes d\'optimisation', 'Linear Programming', 'Genetic Algorithms', 'NumPy']
-        },
-        'mini-sgbd': {
-            title: 'Mini-SGBD Relationnel',
-            description: 'Implémentation d\'un mini système de gestion de base de données supportant les requêtes de création, insertion et sélection avec contraintes.',
-            features: [
-                'Requêtes SQL basiques (CREATE, INSERT, SELECT)',
-                'Gestion des contraintes',
-                'Index pour optimisation',
-                'Transactions ACID',
-                'Interface en ligne de commande'
-            ],
-            technologies: ['C', 'SQL', 'Data Structures', 'File Management', 'Database Design']
-        },
         'taskflow': {
             title: 'TaskFlow - Application de Gestion de Tâches Collaborative',
             description: 'Application web Full Stack permettant aux utilisateurs de créer, gérer et partager des listes de tâches en temps réel avec des espaces collaboratifs et un système d\'authentification sécurisé.',
@@ -471,6 +375,142 @@ function showProjectDetails(projectId) {
                 'Interface React moderne et responsive'
             ],
             technologies: ['Django', 'Django REST Framework', 'React', 'PostgreSQL', 'JWT', 'Docker', 'AWS EC2', 'AWS RDS', 'GitHub Actions', 'SimpleJWT']
+        },
+        'csv-analyzer': {
+            title: 'Analyseur de CSV et Visualisation de Données',
+            description: 'Application web interactive développée avec Streamlit permettant de téléverser des fichiers CSV et de générer automatiquement des visualisations (histogrammes, nuages de points, heatmaps) pour explorer et analyser les données.',
+            features: [
+                'Upload de fichiers CSV avec validation',
+                'Génération automatique de visualisations',
+                'Interface interactive avec Streamlit',
+                'Analyse statistique descriptive des données',
+                'Histogrammes et graphiques en barres',
+                'Nuages de points et matrices de corrélation',
+                'Heatmaps pour visualiser les relations',
+                'Export des graphiques en haute résolution',
+                'Filtrage et nettoyage des données',
+                'Détection automatique des types de colonnes'
+            ],
+            technologies: ['Python', 'Streamlit', 'Pandas', 'Matplotlib', 'Seaborn', 'NumPy', 'Plotly']
+        },
+        'real-estate': {
+            title: 'Prédiction de Prix Immobilier',
+            description: 'Modélisation d\'un système de prédiction des prix immobiliers en Île-de-France basé sur plusieurs critères comme la surface, la localisation, et d\'autres caractéristiques du bien.',
+            features: [
+                'Analyse exploratoire de données immobilières',
+                'Feature engineering avancé (surface, localisation, etc.)',
+                'Modèles de régression optimisés (Random Forest, XGBoost)',
+                'Validation croisée et métriques de performance',
+                'Interface de prédiction utilisateur',
+                'Visualisation des facteurs influençant les prix',
+                'Analyse géographique des prix par zone',
+                'Détection d\'outliers et nettoyage des données',
+                'Optimisation des hyperparamètres',
+                'Rapport de performance détaillé'
+            ],
+            technologies: ['Python', 'scikit-learn', 'Pandas', 'NumPy', 'Machine Learning', 'XGBoost', 'Matplotlib', 'Seaborn']
+        },
+        'churn-prediction': {
+            title: 'Churn Prediction - Détection de Clients à Risque',
+            description: 'Développement d\'un modèle de classification pour prédire le churn client sur un jeu de données télécom, permettant d\'identifier les clients susceptibles de résilier.',
+            features: [
+                'Preprocessing des données télécom complexes',
+                'Modèles de classification (Random Forest, SVM, Logistic Regression)',
+                'Évaluation des performances (AUC-ROC, F1-score)',
+                'Analyse des features importantes',
+                'Stratégies de rétention basées sur les prédictions',
+                'Gestion du déséquilibre des classes',
+                'Validation temporelle pour données séquentielles',
+                'Dashboard de monitoring des clients à risque',
+                'Segmentation client avancée',
+                'Recommandations personnalisées'
+            ],
+            technologies: ['Python', 'scikit-learn', 'Classification', 'Data Analysis', 'Pandas', 'Imbalanced-learn', 'SHAP']
+        },
+        'image-recognition': {
+            title: 'Reconnaissance d\'Image - Détection d\'Escaliers',
+            description: 'Conception d\'un programme de reconnaissance d\'escaliers (droit ou tournant) et estimation des matériaux en utilisant des techniques de computer vision et machine learning.',
+            features: [
+                'Détection automatique d\'escaliers dans les images',
+                'Classification droits vs tournants avec CNN',
+                'Estimation des matériaux (bois, métal, béton)',
+                'Traitement d\'images en temps réel',
+                'Interface utilisateur intuitive avec upload d\'images',
+                'Préprocessing avancé (filtres, normalisation)',
+                'Segmentation d\'images pour isoler les escaliers',
+                'Extraction de caractéristiques géométriques',
+                'Modèle de deep learning personnalisé',
+                'Visualisation des résultats avec bounding boxes'
+            ],
+            technologies: ['Python', 'OpenCV', 'NumPy', 'Computer Vision', 'TensorFlow', 'Keras', 'PIL', 'scikit-image']
+        },
+        'quoridor': {
+            title: 'Quoridor Game with AI',
+            description: 'Implémentation de plusieurs algorithmes d\'IA avec Minimax et élagage alpha-bêta, simulations IA vs IA, et interface utilisateur interactive pour le jeu de société Quoridor.',
+            features: [
+                'Algorithmes d\'IA avec Minimax et élagage Alpha-Bêta',
+                'Interface graphique interactive avec Pygame',
+                'Simulations IA vs IA avec statistiques',
+                'Différents niveaux de difficulté',
+                'Système de scoring et classement',
+                'Visualisation des coups possibles',
+                'Mode multijoueur local',
+                'Sauvegarde et chargement de parties',
+                'Analyse des stratégies de jeu',
+                'Optimisation des performances de l\'IA'
+            ],
+            technologies: ['Python', 'Pygame', 'Minimax', 'Alpha-Beta', 'Algorithmes d\'IA', 'Game Theory']
+        },
+        'labyrinth': {
+            title: 'Labyrinth Solver - Résolution de Labyrinthe',
+            description: 'Implémentation et comparaison d\'algorithmes A*, Dijkstra et BFS avec gestion dynamique d\'obstacles et propagation de feu.',
+            features: [
+                'Algorithmes de pathfinding (A*, Dijkstra, BFS)',
+                'Gestion dynamique d\'obstacles en temps réel',
+                'Simulation de propagation de feu',
+                'Visualisation des chemins trouvés',
+                'Comparaison des performances des algorithmes',
+                'Génération procédurale de labyrinthes',
+                'Interface interactive pour modifier le labyrinthe',
+                'Métriques de performance (temps, mémoire)',
+                'Mode pas-à-pas pour comprendre les algorithmes',
+                'Export des résultats et statistiques'
+            ],
+            technologies: ['Python', 'A*', 'Dijkstra', 'BFS', 'Pathfinding', 'Pygame', 'Data Structures']
+        },
+        'resource-optimization': {
+            title: 'Assignation de Ressources Optimisée',
+            description: 'Développement d\'un algorithme d\'affectation de ressources optimisé en fonction de contraintes et priorités multiples.',
+            features: [
+                'Optimisation sous contraintes multiples',
+                'Gestion des priorités et préférences',
+                'Algorithmes génétiques pour solutions complexes',
+                'Résolution de problèmes d\'allocation',
+                'Interface de configuration des contraintes',
+                'Visualisation des solutions optimales',
+                'Analyse de sensibilité des paramètres',
+                'Comparaison de différentes stratégies',
+                'Génération de rapports détaillés',
+                'Optimisation en temps réel'
+            ],
+            technologies: ['Python', 'Algorithmes d\'optimisation', 'Linear Programming', 'Genetic Algorithms', 'NumPy', 'SciPy', 'CVXPY']
+        },
+        'mini-sgbd': {
+            title: 'Mini-SGBD Relationnel',
+            description: 'Implémentation d\'un mini système de gestion de base de données supportant les requêtes de création, insertion et sélection avec contraintes.',
+            features: [
+                'Requêtes SQL basiques (CREATE, INSERT, SELECT)',
+                'Gestion des contraintes d\'intégrité',
+                'Index B-tree pour optimisation des requêtes',
+                'Transactions ACID basiques',
+                'Interface en ligne de commande',
+                'Gestion des types de données (INT, VARCHAR, DATE)',
+                'Jointures simples entre tables',
+                'Système de verrouillage basique',
+                'Sauvegarde et restauration des données',
+                'Planificateur de requêtes simple'
+            ],
+            technologies: ['C', 'SQL', 'Data Structures', 'File Management', 'Database Design', 'B-trees', 'ACID']
         }
     };
 
