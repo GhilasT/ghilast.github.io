@@ -289,6 +289,76 @@ function initializeParallax() {
 
 function showProjectDetails(projectId) {
     const projectDetails = {
+        'data-visualization': {
+            title: 'Application de Visualisation de Données',
+            description: 'Dashboard interactif développé avec React et Chart.js pour la visualisation de données en temps réel, avec une API backend Express pour la gestion et le traitement des données.',
+            features: [
+                'Interface React moderne et interactive',
+                'Graphiques dynamiques avec Chart.js',
+                'API REST Express pour les données',
+                'Mise à jour en temps réel',
+                'Filtres et options de personnalisation',
+                'Export des données et graphiques',
+                'Design responsive et accessible'
+            ],
+            technologies: ['React', 'Chart.js', 'Express', 'Node.js', 'D3.js', 'WebSocket', 'CSS3']
+        },
+        'user-auth-system': {
+            title: 'Système de Gestion d\'Utilisateurs avec JWT',
+            description: 'Système complet de gestion d\'utilisateurs avec authentification sécurisée JWT, développé avec Node.js, Express et MongoDB pour la gestion des sessions et des permissions.',
+            features: [
+                'Authentification JWT sécurisée',
+                'Inscription et connexion utilisateur',
+                'Gestion des rôles et permissions',
+                'Hashage des mots de passe (bcrypt)',
+                'Middleware de protection des routes',
+                'Refresh tokens automatiques',
+                'Validation des données d\'entrée'
+            ],
+            technologies: ['Node.js', 'Express', 'MongoDB', 'JWT', 'bcrypt', 'Mongoose', 'Joi']
+        },
+        'pharmaplus': {
+            title: 'PharmaPlus - Progiciel de Gestion de Pharmacie',
+            description: 'Application complète de gestion de pharmacie développée avec Spring Boot et JavaFX, incluant la gestion des stocks, commandes, facturation et interface utilisateur moderne.',
+            features: [
+                'Gestion complète des stocks médicaments',
+                'Système de commandes automatisé',
+                'Facturation et gestion clientèle',
+                'Interface JavaFX moderne et intuitive',
+                'Base de données relationnelle MySQL',
+                'Rapports et statistiques détaillés',
+                'Gestion des dates d\'expiration'
+            ],
+            technologies: ['Spring Boot', 'JavaFX', 'MySQL', 'JPA/Hibernate', 'Maven', 'Java 11', 'CSS']
+        },
+        'easypay': {
+            title: 'EasyPay - Application de Paiement Sécurisé',
+            description: 'Application de paiement sécurisée développée en Java avec Spring Security, incluant le chiffrement des transactions, l\'authentification multi-facteurs et la gestion complète des paiements.',
+            features: [
+                'Authentification multi-facteurs sécurisée',
+                'Chiffrement AES des données sensibles',
+                'Gestion des comptes utilisateurs',
+                'Historique détaillé des transactions',
+                'Interface de paiement intuitive',
+                'Validation des cartes bancaires',
+                'Système de notifications en temps réel'
+            ],
+            technologies: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'AES Encryption', 'MySQL', 'REST API']
+        },
+        'boisart': {
+            title: 'Boisart - Site E-commerce d\'Artisanat en Bois',
+            description: 'Site de vente en ligne spécialisé dans l\'artisanat en bois, développé avec HTML5, CSS3 et JavaScript vanilla, incluant un système de panier et de gestion des commandes.',
+            features: [
+                'Catalogue de produits interactif',
+                'Système de panier d\'achat dynamique',
+                'Gestion des commandes clients',
+                'Interface responsive et moderne',
+                'Système de recherche et filtres',
+                'Galerie d\'images optimisée',
+                'Formulaires de contact intégrés'
+            ],
+            technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap', 'jQuery']
+        },
         'csv-analyzer': {
             title: 'Analyseur de CSV et Visualisation de Données',
             description: 'Application web interactive développée avec Streamlit permettant de téléverser des fichiers CSV et de générer automatiquement des visualisations (histogrammes, nuages de points, heatmaps) pour explorer et analyser les données.',
@@ -361,42 +431,6 @@ function showProjectDetails(projectId) {
             ],
             technologies: ['Python', 'A*', 'Dijkstra', 'BFS', 'Pathfinding']
         },
-        'pharmaplus': {
-            title: 'PharmaPlus - Progiciel de Gestion de Pharmacie',
-            description: 'Développement d\'un logiciel complet de gestion de stocks, commandes, et facturation en pharmacie avec interface utilisateur moderne.',
-            features: [
-                'Gestion complète des stocks',
-                'Système de commandes automatisé',
-                'Facturation intégrée',
-                'Interface JavaFX moderne',
-                'Base de données relationnelle'
-            ],
-            technologies: ['Spring Boot', 'JavaFX', 'Java', 'MySQL', 'JPA']
-        },
-        'easypay': {
-            title: 'EasyPay - Application de Paiements Sécurisés',
-            description: 'Développement d\'une application de paiements et e-commerce avec authentification sécurisée et gestion complète des transactions.',
-            features: [
-                'Authentification multi-facteurs',
-                'Chiffrement des transactions',
-                'Gestion des comptes utilisateurs',
-                'Historique des paiements',
-                'Interface e-commerce'
-            ],
-            technologies: ['Java', 'Spring Security', 'JWT', 'Cryptographie', 'REST API']
-        },
-        'boisart': {
-            title: 'Boisart - Site E-commerce d\'Artisanat',
-            description: 'Création d\'un site de vente en ligne d\'objets artisanaux en bois avec gestion complète des produits et commandes.',
-            features: [
-                'Catalogue de produits interactif',
-                'Panier d\'achat dynamique',
-                'Gestion des commandes',
-                'Interface responsive',
-                'Système de recherche avancé'
-            ],
-            technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL']
-        },
         'resource-optimization': {
             title: 'Assignation de Ressources Optimisée',
             description: 'Développement d\'un algorithme d\'affectation de ressources optimisé en fonction de contraintes et priorités multiples.',
@@ -420,12 +454,28 @@ function showProjectDetails(projectId) {
                 'Interface en ligne de commande'
             ],
             technologies: ['C', 'SQL', 'Data Structures', 'File Management', 'Database Design']
+        },
+        'taskflow': {
+            title: 'TaskFlow - Application de Gestion de Tâches Collaborative',
+            description: 'Application web Full Stack permettant aux utilisateurs de créer, gérer et partager des listes de tâches en temps réel avec des espaces collaboratifs et un système d\'authentification sécurisé.',
+            features: [
+                'API REST CRUD pour utilisateurs, tâches, et projets',
+                'Authentification JWT avec DRF SimpleJWT',
+                'Gestion des espaces collaboratifs avec rôles (admin/membre)',
+                'Création et partage de listes de tâches en temps réel',
+                'Système de permissions et gestion des rôles',
+                'Filtrage et pagination des tâches',
+                'Documentation API via Swagger/DRF Docs',
+                'Déploiement Dockerisé sur AWS EC2 + RDS PostgreSQL',
+                'Pipeline CI/CD automatisé avec GitHub Actions',
+                'Interface React moderne et responsive'
+            ],
+            technologies: ['Django', 'Django REST Framework', 'React', 'PostgreSQL', 'JWT', 'Docker', 'AWS EC2', 'AWS RDS', 'GitHub Actions', 'SimpleJWT']
         }
     };
 
     const project = projectDetails[projectId];
     if (project) {
-        // Create enhanced modal
         createProjectModal(project);
     }
 }
